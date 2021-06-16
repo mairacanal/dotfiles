@@ -11,3 +11,4 @@ A collection of all my vim, zsh and tmux configs. I'm still trying to organize t
 - Usually, I use Pop_OS! as my distro.
 - **Dependencies:**
     - zsh-syntax-highlighting: installed using packages
+    - oh-my-zsh: installed via GitHub

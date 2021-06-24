@@ -78,6 +78,9 @@ set magic
 " For showing numbers
 set number
 
+" For relative numbers
+set relativenumber
+
 " Show matching brackets when text indicator is over them
 set showmatch
 

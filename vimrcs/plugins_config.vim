@@ -4,7 +4,7 @@
     " => vim-plug
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'dracula/vim', { 'as': 'dracula' }
+    Plug 'morhetz/gruvbox', 
     Plug 'vim-airline/vim-airline'
     Plug 'preservim/nerdtree' |
         \ Plug 'Xuyuanp/nerdtree-git-plugin' |
@@ -89,7 +89,8 @@
 
 
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    " => Dracula colorscheme 
+    " => Gruvbox colorscheme 
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    colorscheme dracula
+    colorscheme gruvbox
+    set background=dark
 

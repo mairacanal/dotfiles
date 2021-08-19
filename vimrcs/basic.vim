@@ -111,14 +111,8 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-" Italic configuration
-if $TERM != 'xterm-256color'
-    set t_ZH=^[[3m
-    set t_ZR=^[[23m]]]]
-endif
-
 try
-    colorscheme dracula
+    colorscheme gruvbox
 catch
 endtry
 

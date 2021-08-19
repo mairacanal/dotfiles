@@ -1,0 +1,14 @@
+import:
+  - ~/.config/alacritty/gruvbox.yml
+
+window:
+  padding:
+    x: 10
+    y: 10
+
+  decorations: none
+
+font:
+  size: 10
+
+background_opacity: 0.80

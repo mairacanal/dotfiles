@@ -4,12 +4,14 @@
     " => vim-plug
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
     Plug 'morhetz/gruvbox', 
     Plug 'vim-airline/vim-airline'
     Plug 'preservim/nerdtree' |
         \ Plug 'Xuyuanp/nerdtree-git-plugin' |
         \  Plug 'ryanoasis/vim-devicons'
     Plug 'luochen1990/rainbow'
+
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
     Plug 'junegunn/fzf.vim'
     Plug 'tpope/vim-fugitive'
@@ -22,6 +24,7 @@
     Plug 'godlygeek/tabular'
     Plug 'michaeljsmith/vim-indent-object'
     Plug 'farmergreg/vim-lastplace'
+    Plug 'Raimondi/delimitMate'
 
     " => Syntax plugins 
     Plug 'leafgarland/typescript-vim'

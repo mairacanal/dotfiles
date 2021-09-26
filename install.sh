@@ -10,33 +10,40 @@ echo "Installing flatpak"
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 echo "Done!"
 
-echo "Adding dnf repos"
+echo "Syncing repos"
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
     sudo dnf copr enable pschyska/alacritty
     sudo dnf check-update
 echo "Done!"
 
 echo "Installing rpm packages"
+
+    sudo dnf install liberation-fonts
+
     wget https://downloads.vivaldi.com/stable/vivaldi-stable-4.2.2406.48-1.x86_64.rpm
     sudo rpm -ivh vivaldi-stable-4.2.2406.48-1.x86_64.rpm
+    sudo rm vivaldi-stable-4.2.2406.48-1.x86_64.rpm
 
     wget https://static.zenkit.com/downloads/desktop-apps/base/zenkit-base-linux.rpm
     sudo rpm -ivh zenkit-base-linux.rpm
+    sudo rm zenkit-base-linux.rpm
 
     wget https://zoom.us/client/latest/zoom_x86_64.rpm
     sudo rpm -ivh zoom_x86_64.rpm
+    sudo rm zoom_x86_64.rpm
 
     wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
     sudo rpm -ivh appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+    sudo rm appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
 
-    wget https://www.dropbox.com/download?dl=packages/fedora/nautilus-dropbox-2020.03.04-1.fedora.x86_64.rpm
-    sudo rpm -ivh nautilus-dropbox-2020.03.04-1.fedora.x86_64.rpm
 echo "Done!"
 
 echo "Installing dnf packages"
     sudo dnf install zathura-pdf-poppler xournalpp alacritty ripgrep python \
-                     nodejs zsh bat fzf clangd clangd-tools powerline-fonts \
+                     nodejs zsh bat fzf clang clang-tools-extra powerline-fonts \
                      fira-code-fonts gnome-tweaks gnome-shell-extension-pop-shell \
-                     ranger htop
+                     ranger htop util-linux-user code
 echo "Done!"
 
 echo "Installing pip packages"
@@ -46,7 +53,6 @@ echo "Done!"
 echo "Installing flatpak packages"
     sudo flatpak install flathub com.spotify.Client
     sudo flatpak install flathub com.discordapp.Discord
-    sudo flatpak install flathub com.visualstudio.code
 echo "Done!"
 
 echo "Installing snap packages"
@@ -76,11 +82,11 @@ echo "Setting zsh in the system"
     # Installing zsh-syntax-highlighting
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-    cp .zshrc ~/
 echo "Done!"
 
 echo "Setting Alacritty in the system"
-    cp alacritty/* ~/.config/alacritty
+    mkdir ~/.config/alacritty
+    cp ./alacritty/* ~/.config/alacritty
 echo "Done!"
 
 echo "Setting gruvbox system theme"
@@ -89,17 +95,18 @@ echo "Setting gruvbox system theme"
     mkdir ~/.themes
     mkdir ~/.icons
 
-    cp gruvbox-material-gtk/themes/* ~/.themes/
-    cp gruvbox-material-gtk/icons/* ~/.icons/
+    cp -r gruvbox-material-gtk/themes/* ~/.themes/
+    cp -r gruvbox-material-gtk/icons/* ~/.icons/
 
-    rm -r gruvbox-material-gtk
+    sudo rm -r gruvbox-material-gtk
 echo "Done!"
 
 echo "Setting gruvbox zathura theme"
     git clone https://github.com/eastack/zathura-gruvbox
 
+    mkdir ~/.config/zathura
     cp zathura-gruvbox/zathura-gruvbox-dark ~/.config/zathura/zathurarc
-    rm -r zathura-gruvbox
+    sudo rm -r zathura-gruvbox
 echo "Done!"
 
 echo "Installing my favorite wallpapers"

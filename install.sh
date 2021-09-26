@@ -27,12 +27,16 @@ echo "Installing rpm packages"
 
     wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
     sudo rpm -ivh appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+
+    wget https://www.dropbox.com/download?dl=packages/fedora/nautilus-dropbox-2020.03.04-1.fedora.x86_64.rpm
+    sudo rpm -ivh nautilus-dropbox-2020.03.04-1.fedora.x86_64.rpm
 echo "Done!"
 
 echo "Installing dnf packages"
     sudo dnf install zathura-pdf-poppler xournalpp alacritty ripgrep python \
                      nodejs zsh bat fzf clangd clangd-tools powerline-fonts \
-                     fira-code-fonts gnome-tweaks gnome-shell-extension-pop-shell
+                     fira-code-fonts gnome-tweaks gnome-shell-extension-pop-shell \
+                     ranger htop
 echo "Done!"
 
 echo "Installing pip packages"

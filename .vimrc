@@ -1,4 +1,4 @@
-set runtimepath+=~/.dotfiles
+set runtimepath+=~/dotfiles
 
 source ~/dotfiles/vimrcs/basic.vim
 source ~/dotfiles/vimrcs/filetypes.vim

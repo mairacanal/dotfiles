@@ -22,17 +22,15 @@
     Plug 'sheerun/vim-polyglot'
     Plug 'amix/open_file_under_cursor.vim'
     Plug 'godlygeek/tabular'
-    Plug 'michaeljsmith/vim-indent-object'
-    Plug 'farmergreg/vim-lastplace'
     Plug 'Raimondi/delimitMate'
 
     " => Syntax plugins 
-    Plug 'leafgarland/typescript-vim'
     Plug 'nvie/vim-flake8'
     Plug 'pangloss/vim-javascript'
     Plug 'plasticboy/vim-markdown'
     Plug 'maxmellon/vim-jsx-pretty'
     Plug 'Vimjas/vim-python-pep8-indent'
+    Plug 'kergoth/vim-bitbake'
 
     let g:rainbow_active = 1 
     let g:airline_powerline_fonts = 1

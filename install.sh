@@ -98,3 +98,7 @@ echo "Setting gruvbox zathura theme"
     rm -r zathura-gruvbox
 echo "Done!"
 
+echo "Installing my favorite wallpapers"
+    git clone https://github.com/archcraft-os/archcraft-wallpapers.git
+echo "Done!"
+

@@ -99,6 +99,9 @@ set foldcolumn=1
 " GitGutter and Coc
 set updatetime=300
 
+" Set visual column
+set colorcolumn=80
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts

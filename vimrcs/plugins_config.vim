@@ -31,9 +31,11 @@
     Plug 'maxmellon/vim-jsx-pretty'
     Plug 'Vimjas/vim-python-pep8-indent'
     Plug 'kergoth/vim-bitbake'
+    Plug 'rhysd/vim-clang-format'
 
     let g:rainbow_active = 1 
     let g:airline_powerline_fonts = 1
+    let g:clang_format#code_style = 'Webkit'
 
     call plug#end()
 
@@ -94,4 +96,5 @@
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     colorscheme gruvbox
     set background=dark
+    autocmd VimEnter * hi Normal ctermbg=none
 

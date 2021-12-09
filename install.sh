@@ -13,7 +13,6 @@ echo "Done!"
 echo "Syncing repos"
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
     sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-    sudo dnf copr enable pschyska/alacritty
     sudo dnf check-update
 echo "Done!"
 
@@ -40,14 +39,10 @@ echo "Installing rpm packages"
 echo "Done!"
 
 echo "Installing dnf packages"
-    sudo dnf install zathura-pdf-poppler xournalpp alacritty ripgrep python \
+    sudo dnf install zathura-pdf-poppler xournalpp ripgrep python \
                      nodejs zsh bat fzf clang clang-tools-extra powerline-fonts \
                      fira-code-fonts gnome-tweaks gnome-shell-extension-pop-shell \
                      ranger htop util-linux-user code
-echo "Done!"
-
-echo "Installing pip packages"
-    sudo pip install conan
 echo "Done!"
 
 echo "Installing flatpak packages"
@@ -107,9 +102,5 @@ echo "Setting gruvbox zathura theme"
     mkdir ~/.config/zathura
     cp zathura-gruvbox/zathura-gruvbox-dark ~/.config/zathura/zathurarc
     sudo rm -r zathura-gruvbox
-echo "Done!"
-
-echo "Installing my favorite wallpapers"
-    git clone https://github.com/archcraft-os/archcraft-wallpapers.git
 echo "Done!"
 

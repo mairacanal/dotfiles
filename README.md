@@ -14,7 +14,7 @@ sudo ./install.sh
 
 - **Theme:** Gruvbox
 - **Plugin Manager:** Vim Plug
-- **Distro:** Fedora 34
+- **Distro:** Fedora 35
 - I added primarily plugins for Markdown, JavaScript, Python and C/C++.
 - *Why so many plugins?* I don't like to keep it simple, I like to keep it easy.
 

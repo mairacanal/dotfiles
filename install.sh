@@ -20,18 +20,6 @@ echo "Installing rpm packages"
 
     sudo dnf install liberation-fonts
 
-    wget https://downloads.vivaldi.com/stable/vivaldi-stable-4.2.2406.48-1.x86_64.rpm
-    sudo rpm -ivh vivaldi-stable-4.2.2406.48-1.x86_64.rpm
-    sudo rm vivaldi-stable-4.2.2406.48-1.x86_64.rpm
-
-    wget https://static.zenkit.com/downloads/desktop-apps/base/zenkit-base-linux.rpm
-    sudo rpm -ivh zenkit-base-linux.rpm
-    sudo rm zenkit-base-linux.rpm
-
-    wget https://zoom.us/client/latest/zoom_x86_64.rpm
-    sudo rpm -ivh zoom_x86_64.rpm
-    sudo rm zoom_x86_64.rpm
-
     wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
     sudo rpm -ivh appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
     sudo rm appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
@@ -42,12 +30,13 @@ echo "Installing dnf packages"
     sudo dnf install zathura-pdf-poppler xournalpp ripgrep python \
                      nodejs zsh bat fzf clang clang-tools-extra powerline-fonts \
                      fira-code-fonts gnome-tweaks gnome-shell-extension-pop-shell \
-                     ranger htop util-linux-user code
+                     htop util-linux-user code lld thunderbird \
 echo "Done!"
 
 echo "Installing flatpak packages"
     sudo flatpak install flathub com.spotify.Client
     sudo flatpak install flathub com.discordapp.Discord
+    sudo flatpak install flathub im.riot.Riot
 echo "Done!"
 
 echo "Installing snap packages"

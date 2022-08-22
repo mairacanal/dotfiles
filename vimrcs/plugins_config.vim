@@ -20,7 +20,6 @@
     Plug 'tpope/vim-surround' 
     Plug 'airblade/vim-gitgutter'
     Plug 'sheerun/vim-polyglot'
-    Plug 'amix/open_file_under_cursor.vim'
     Plug 'godlygeek/tabular'
     Plug 'Raimondi/delimitMate'
 
@@ -32,6 +31,7 @@
     Plug 'Vimjas/vim-python-pep8-indent'
     Plug 'kergoth/vim-bitbake'
     Plug 'rhysd/vim-clang-format'
+    Plug 'rust-lang/rust.vim'
 
     let g:rainbow_active = 1 
     let g:airline_powerline_fonts = 1

@@ -86,9 +86,10 @@
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     " => vim-fugitive
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    nmap <leader>gh :diffget //3<CR>
-    nmap <leader>gu :diffget //2<CR>
     nmap <leader>gs :G<CR>
+    nmap <leader>gd :G diff<CR>
+    nmap <leader>gl :G log<CR>
+    nmap <leader>gp :G grep \(<c-r>=expand("<cword>")<cr>\)<CR>
 
 
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

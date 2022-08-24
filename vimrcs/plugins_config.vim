@@ -45,7 +45,7 @@
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     set rtp+=~/.fzf
 
-    nnoremap <expr><leader>f (len(system('git rev-parse')) ? ':Files' : ':GFiles --exclude-standard --others --cached')."\<cr>"
+    nmap <leader>f :GFiles<CR>
     nmap <silent><C-P> :History<CR>
     nmap <leader>d :Rg <space>
 

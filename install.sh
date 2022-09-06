@@ -30,7 +30,7 @@ echo "Installing dnf packages"
     sudo dnf install zathura-pdf-poppler xournalpp ripgrep python \
                      nodejs zsh bat fzf clang clang-tools-extra powerline-fonts \
                      fira-code-fonts gnome-tweaks gnome-shell-extension-pop-shell \
-                     htop util-linux-user code lld thunderbird \
+                     htop util-linux-user code lld thunderbird xprop \
 echo "Done!"
 
 echo "Installing flatpak packages"
@@ -70,26 +70,26 @@ echo "Done!"
 
 echo "Setting Alacritty in the system"
     mkdir ~/.config/alacritty
-    cp ./alacritty/* ~/.config/alacritty
+    cp ./config/alacritty ~/.config
 echo "Done!"
 
-echo "Setting gruvbox system theme"
-    git clone https://github.com/TheGreatMcPain/gruvbox-material-gtk
+echo "Setting nord system theme"
+    git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
 
-    mkdir ~/.themes
-    mkdir ~/.icons
+    ./Graphite-gtk-theme/install.sh --libadwaita --color dark --tweaks nord rimless
 
-    cp -r gruvbox-material-gtk/themes/* ~/.themes/
-    cp -r gruvbox-material-gtk/icons/* ~/.icons/
-
-    sudo rm -r gruvbox-material-gtk
+    sudo rm -r Graphite-gtk-theme
 echo "Done!"
 
-echo "Setting gruvbox zathura theme"
-    git clone https://github.com/eastack/zathura-gruvbox
+echo "Get Icons"
+    sudo dnf install papirus-icon-theme -y
+echo "Done!"
+
+echo "Setting nord zathura theme"
+    git clone https://github.com/gdnand/zathura-nord.git
 
     mkdir ~/.config/zathura
-    cp zathura-gruvbox/zathura-gruvbox-dark ~/.config/zathura/zathurarc
-    sudo rm -r zathura-gruvbox
+    cp zathura-nord/zathura-nord ~/.config/zathura/zathurarc
+    sudo rm -r zathura-nord
 echo "Done!"
 

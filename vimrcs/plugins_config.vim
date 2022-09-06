@@ -5,7 +5,7 @@
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-    Plug 'morhetz/gruvbox', 
+    Plug 'arcticicestudio/nord-vim'
     Plug 'vim-airline/vim-airline'
     Plug 'preservim/nerdtree' |
         \ Plug 'Xuyuanp/nerdtree-git-plugin' |
@@ -95,7 +95,6 @@
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     " => Gruvbox colorscheme 
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    colorscheme gruvbox
-    set background=dark
+    colorscheme nord
     autocmd VimEnter * hi Normal ctermbg=none
 

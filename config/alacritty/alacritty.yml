@@ -1,0 +1,13 @@
+import:
+  - ~/.config/alacritty/nord.yml
+
+window:
+  padding:
+    x: 12
+    y: 8
+
+  decorations: none
+  opacity: 0.95
+
+font:
+  size: 10

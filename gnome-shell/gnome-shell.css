@@ -2203,11 +2203,11 @@ StEntry StLabel.hint-text, .popup-menu .search-entry StLabel.hint-text {
 
   /* mediacontrols */
 #panel Gjs_mediacontrols_cliffniff_github_com_widget_MediaControls.panel-button StButton{
-color: #2e3440;
-transition-duration: 150ms;
-border: 3px solid transparent;
-border-radius: 6px;
-box-shadow: inset 0 0 0 1000px #a3be8c;
+  color: #2e3440;
+  transition-duration: 150ms;
+  border: 3px solid transparent;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1000px #a3be8c;
 }
 
 #panel Gjs_mediacontrols_cliffniff_github_com_widget_MediaControls.panel-button StButton:hover{
@@ -2287,15 +2287,16 @@ box-shadow: inset 0 0 0 1000px #a3be8c;
   padding: 3px;
   margin: 0px 1px;
   -st-icon-style: symbolic;
-  color: #2e3440;
-  border: 3px solid transparent;
-  border-radius: 6px;
-  box-shadow: inset 0 0 0 1000px #b48ead;
+  color: #ffffff;
 }
 
 #panel .panel-button .panel-status-indicators-box .system-status-icon,
 #panel .panel-button .panel-status-menu-box .system-status-icon {
   margin: 0;
+  color: #2e3440;
+  border: 3px solid transparent;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1000px #b48ead;
 }
 
 #panel .panel-button .app-menu-icon {

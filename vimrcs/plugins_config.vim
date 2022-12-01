@@ -7,9 +7,6 @@
 
     Plug 'arcticicestudio/nord-vim'
     Plug 'vim-airline/vim-airline'
-    Plug 'preservim/nerdtree' |
-        \ Plug 'Xuyuanp/nerdtree-git-plugin' |
-        \  Plug 'ryanoasis/vim-devicons'
     Plug 'luochen1990/rainbow'
 
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
@@ -55,18 +52,6 @@
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
     set grepprg=/bin/grep\ -nH
-
-
-    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    " => Nerd Tree
-    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    let g:NERDTreeWinPos = "right"
-    let NERDTreeShowHidden=0
-    let NERDTreeIgnore = ['\.pyc$', '__pycache__']
-    let g:NERDTreeWinSize=35
-    map <leader>nn :NERDTreeToggle<cr>
-    map <leader>nb :NERDTreeFromBookmark<Space>
-    map <leader>nf :NERDTreeFind<cr>
 
 
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

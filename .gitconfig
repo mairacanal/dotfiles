@@ -1,0 +1,13 @@
+[user]
+	name = Maíra Canal
+	email = mairacanal@riseup.net
+	signingkey = <GPG_KEY>
+[sendemail]
+	smtpServer = mail.riseup.net
+	smtpUser = mairacanal
+	smtpServerPort = 587
+	smtpEncryption = tls
+[credential]
+	helper = store
+[commit]
+	gpgsign = true

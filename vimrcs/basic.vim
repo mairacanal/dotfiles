@@ -9,8 +9,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
 
-Plug 'majutsushi/tagbar'
-
 Plug 'bling/vim-airline'
 Plug 'luochen1990/rainbow'
 
@@ -21,6 +19,8 @@ Plug 'raimondi/delimitmate'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'junegunn/vim-easy-align'
 Plug 'chiel92/vim-autoformat'
+
+Plug 'rust-lang/rust.vim'
 
 Plug 'nordtheme/vim'
 
@@ -62,8 +62,8 @@ set tags=./tags,tags
 " incase can't delete in INSERT modee
 set backspace=indent,eol,start
 
-" set tab as 2 space, `:retab` to work on current buffer
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2
+" set tab as 8 space, `:retab` to work on current buffer
+set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab cindent cc=80 | %retab | autocmd BufWritePre * %s/\s\+$//e
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source ./.vimrc
@@ -95,15 +95,6 @@ nmap <leader>f :GFiles<CR>
 nmap <silent><C-P> :History<CR>
 nmap <leader>d :Rg <space>
 nmap <leader>rg :Rg  <C-R><C-W><CR>
-
-"""""""""""""""""""""""""""""""""""""""""""
-" => tagbar
-"""""""""""""""""""""""""""""""""""""""""""
-autocmd VimEnter * nested :TagbarOpen
-set updatetime=200
-autocmd VimEnter * nested :call tagbar#autoopen(1)
-autocmd BufEnter * nested :call tagbar#autoopen(0)
-nmap <F8> :TagbarToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""
 " => ctags

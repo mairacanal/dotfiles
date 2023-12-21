@@ -13,7 +13,7 @@ sudo ./install.sh
 
 ## Some Information
 
-- **Distro:** Fedora 37
+- **Distro:** Fedora 39
 - **Plugin Manager:** Vim Plug
 - **Colour scheme:** [Nord](https://github.com/arcticicestudio/nord)
 - **GTK and shell theme:** [Graphite Nord Compact](https://github.com/vinceliuice/Graphite-gtk-theme)
@@ -28,5 +28,4 @@ sudo ./install.sh
 - **Extensions:**
     - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
     - [Media Controls](https://extensions.gnome.org/extension/4470/media-controls/)
-    - [Unite](https://extensions.gnome.org/extension/1287/unite/)
     - [Pop Shell](https://github.com/pop-os/shell)

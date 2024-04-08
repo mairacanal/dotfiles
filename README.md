@@ -59,3 +59,7 @@ On Linux, I use [Alacritty](https://github.com/alacritty/alacritty), while on Ma
 
 - [Raycast](https://www.raycast.com/)
 
+## Inspirations
+
+- [typecraft](https://www.youtube.com/@typecraft_dev)
+

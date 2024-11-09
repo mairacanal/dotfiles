@@ -21,7 +21,7 @@ echo "Installing dnf packages"
                      nodejs zsh fzf clang clang-tools-extra \
                      fira-code-fonts gnome-tweaks gnome-shell-extension-pop-shell \
                      htop util-linux-user lld thunderbird xprop \
-                     gimp gnome-pomodoro alacritty neovim ripgrep tmux
+                     gimp alacritty neovim ripgrep tmux
 echo "Done!"
 
 echo "Installing flatpak packages"
@@ -56,7 +56,7 @@ echo "Done!"
 echo "Setting nord system theme"
     git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
 
-    ./Graphite-gtk-theme/install.sh --libadwaita --color dark --tweaks nord rimless
+    ./Graphite-gtk-theme/install.sh --l --color dark --tweaks nord rimless normal
 
     sudo rm -r Graphite-gtk-theme
 echo "Done!"

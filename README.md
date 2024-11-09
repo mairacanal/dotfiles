@@ -4,7 +4,7 @@ Status: 🚧 On going
 
 ## Tools 
 
-- **Operating System:** Fedora 39 or Mac OS Sonoma
+- **Operating System:** Fedora 41 or Mac OS Sequoia
 - **Colour scheme:** [Nord](https://github.com/arcticicestudio/nord)
     - The terminal is currently using [catppuccin](https://catppuccin.com)
 
@@ -12,13 +12,14 @@ Status: 🚧 On going
 
 I use a mix of [Graphite Nord Compact](https://github.com/vinceliuice/Graphite-gtk-theme)
 and a custom GNOME shell theme. For icons, I use
-[Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme). I usually use the
-[Pop Shell](https://github.com/pop-os/shell) extension as well.
+[Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) and set the folders
+using [Papirus Folders](https://github.com/PapirusDevelopmentTeam/papirus-folders) to the **nordic**
+color. I usually use the [Pop Shell](https://github.com/pop-os/shell) extension as well.
 
 - [Graphite Nord Compact](https://github.com/vinceliuice/Graphite-gtk-theme)
 - [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - [Pop Shell](https://github.com/pop-os/shell)
-- [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
+- [Papirus Folders](https://github.com/PapirusDevelopmentTeam/papirus-folders)
 
 ### Terminal Configuration
 
@@ -47,17 +48,19 @@ On Linux, I use [Alacritty](https://github.com/alacritty/alacritty), while on Ma
 - [Spotify](https://open.spotify.com/)
 - [Todoist](https://todoist.com/)
 - [Dropbox](https://www.dropbox.com/)
-- [Obsidian](https://obsidian.md)
 - [Vivaldi](https://vivaldi.com)
+- [Thunderbird](https://www.thunderbird.net/)
+- [Notion](https://www.notion.so)
+- [Notion Calendar](https://calendar.notion.so)
 
 #### Linux
 
 - [Zathura](https://github.com/pwmt/zathura)
-- [Thunderbird](https://www.thunderbird.net/)
 
 #### Mac
 
 - [Raycast](https://www.raycast.com/)
+- Apple Notes
 
 ## Inspirations
 

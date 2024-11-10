@@ -62,7 +62,7 @@ echo "Setting nord system theme"
 echo "Done!"
 
 echo "Get Icons"
-    sudo dnf install papirus-icon-theme -y
+    sudo dnf install papirus-icon-theme papirus-icon-theme-dark -y
 echo "Done!"
 
 echo "Setting nord zathura theme"

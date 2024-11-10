@@ -12,12 +12,12 @@ Status: 🚧 On going
 
 I use a mix of [Graphite Nord Compact](https://github.com/vinceliuice/Graphite-gtk-theme)
 and a custom GNOME shell theme. For icons, I use
-[Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) and set the folders
+[Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) and set the folders
 using [Papirus Folders](https://github.com/PapirusDevelopmentTeam/papirus-folders) to the **nordic**
 color. I usually use the [Pop Shell](https://github.com/pop-os/shell) extension as well.
 
 - [Graphite Nord Compact](https://github.com/vinceliuice/Graphite-gtk-theme)
-- [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - [Pop Shell](https://github.com/pop-os/shell)
 - [Papirus Folders](https://github.com/PapirusDevelopmentTeam/papirus-folders)
 

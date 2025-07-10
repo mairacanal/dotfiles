@@ -34,8 +34,8 @@ On Linux, I use [Alacritty](https://github.com/alacritty/alacritty), while on Ma
     - [tmp](https://github.com/tmux-plugins/tpm) as plugin manager
 - [Fira Code Nerd Font](https://www.nerdfonts.com/font-downloads)
 - [git](https://git-scm.com/)
-    - [lazygit](https://github.com/jesseduffield/lazygit) for quick diff
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [skim](https://github.com/skim-rs/skim)
 
 > I had some problems when using True Color (24-bit) with the trio Alacritty + Nvim + Tmux
 > and this [tutorial](https://gist.github.com/andersevenrud/015e61af2fd264371032763d4ed965b6)
@@ -52,6 +52,7 @@ On Linux, I use [Alacritty](https://github.com/alacritty/alacritty), while on Ma
 - [Thunderbird](https://www.thunderbird.net/)
 - [Notion](https://www.notion.so)
 - [Notion Calendar](https://calendar.notion.so)
+- [Logseq](https://logseq.com)
 
 #### Linux
 
@@ -60,7 +61,6 @@ On Linux, I use [Alacritty](https://github.com/alacritty/alacritty), while on Ma
 #### Mac
 
 - [Raycast](https://www.raycast.com/)
-- Apple Notes
 
 ## Inspirations
 

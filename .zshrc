@@ -74,3 +74,22 @@ autoload compinit && compinit -i
 
 # starship
 eval "$(starship init zsh)"
+
+# MacOS
+
+## Homebrew
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export PATH="$PATH:/Users/mairacanal/.local/bin"
+
+## Bee Headers
+source bee-init
+
+## Fix GPG key on iTerm2
+export GPG_TTY=$(tty)
+
+## Fix folder colors
+## See: https://github.com/ohmyzsh/ohmyzsh/issues/5349
+alias ls="gls --color=always"
+
+## skim-rs/skim
+source $(brew --prefix)/opt/sk/share/zsh/site-functions/key-bindings.zsh

@@ -29,6 +29,10 @@ return {
         capabilities = capabilities
       })
 
+      lspconfig.clangd.setup({
+        capabilities = capabilities
+      })
+
       lspconfig.rust_analyzer.setup({
         capabilities = capabilities
       })

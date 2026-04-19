@@ -4,7 +4,7 @@ return {
   },
   {
     "nvim-telescope/telescope.nvim",
-    tag = "0.1.5",
+    tag = "v0.2.1",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require("telescope").setup({
@@ -14,6 +14,7 @@ return {
           },
         },
       })
+
       local builtin = require("telescope.builtin")
 
       -- File Pickers
@@ -21,13 +22,14 @@ return {
       vim.keymap.set("n", "<leader>gf", builtin.git_files, {})
       vim.keymap.set("n", "<leader>gs", builtin.grep_string, {})
       vim.keymap.set("n", "<leader>lg", builtin.live_grep, {})
-
       -- Vim Pickers
       vim.keymap.set("n", "<leader>b", builtin.buffers, {})
       vim.keymap.set("n", "<leader><leader>", builtin.oldfiles, {})
-
+      -- LSP Pickers
+      vim.keymap.set("n", "<leader>fs", builtin.lsp_dynamic_workspace_symbols, {})
       -- Git Pickers
-      vim.keymap.set("n", "<leader>gc", builtin.git_bcommits, {})
+      vim.keymap.set("n", "<leader>gc", builtin.git_commits, {})
+      vim.keymap.set("n", "<leader>gst", builtin.git_status, {})
 
       require("telescope").load_extension("ui-select")
     end,
